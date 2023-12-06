@@ -1,14 +1,11 @@
-num1 = int(input("First number: "))
-num2 = int(input("Second number: "))
-num3 = int(input("Third number: "))
+len = int(input("How many numbers do you want to enter? "))
  
-largest = num1
+nums = []
  
-if (num2 >= num1) and (num2 >= num3):
-   largest = num2
-elif (num3 >= num1) and (num3 >= num2):
-   largest = num3
-else:
-   largest = num1
+for i in range(0, len):
+   element = int(input("Enter element: "))
+   nums.append(element)
  
-print("Largest number you entered is: ",largest)
+total = sum(nums)
+avg = total/len
+print("Average of elements you entered",round(avg,2))
