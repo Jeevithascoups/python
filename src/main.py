@@ -1,5 +1,8 @@
-num1 = int(input('Enter the first number: '))
-num2 = int(input('Enter the second number: '))
- 
-result = num1//num2
-print(result)
+a = 5
+b = 7
+print('a, b', a, b)
+# swap these two
+temp = a
+a = b
+b = temp
+print('a, b', a, b)
